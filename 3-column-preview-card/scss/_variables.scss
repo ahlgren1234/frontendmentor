@@ -1,0 +1,21 @@
+
+// Primary colors
+$col-bright-orange: hsl(31, 77%, 52%);
+$col-dark-cyan: hsl(184, 100%, 22%);
+$col-very-dark-cyan: hsl(179, 100%, 13%);
+
+// Neutral colors
+$col-transparent-white: hsla(0, 0%, 100%, 0.75);    // paragraphs
+$col-very-light-gray: hsl(0, 0%, 95%);              // backgrounds, headings, buttons
+
+// Body copy
+$body-font-size: 15px;
+
+// import Google fonts
+@import url(https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap);
+
+// Font Variables
+$headingFont: 'Big Shoulders Display', cursive;
+$copyFont: 'Lexend Deca', sans-serif;
+
