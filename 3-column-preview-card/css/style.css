@@ -2,9 +2,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap);
 body {
   background-color: #f2f2f2;
+  font-size: 15px;
 }
 
 .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -18,6 +21,17 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+}
+
 .card {
   width: 33.33333%;
   max-width: 225px;
@@ -25,8 +39,25 @@ body {
   padding: 30px;
 }
 
+@media screen and (max-width: 375px) {
+  .card {
+    width: 90%;
+    max-width: 280px;
+  }
+}
+
 .card-sedans {
   background-color: #e38826;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  .card-sedans {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
 }
 
 .card-suvs {
@@ -35,6 +66,16 @@ body {
 
 .card-luxury {
   background-color: #004241;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  .card-luxury {
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 }
 
 .card h2 {
@@ -48,7 +89,7 @@ body {
   font-weight: 400;
 }
 
-.card button {
+.card .btn {
   width: 140px;
   height: 40px;
   border: none;
@@ -57,5 +98,27 @@ body {
   cursor: pointer;
   margin-top: 50px;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card .btn-sedans {
+  color: #e38826;
+}
+
+.card .btn-suvs {
+  color: #006970;
+}
+
+.card .btn-luxury {
+  color: #004241;
 }
 /*# sourceMappingURL=style.css.map */
